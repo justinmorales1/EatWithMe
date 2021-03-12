@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## What is this web application?
+This web application is an ecommerce website that sells groceries. It implements react, redux, react-router,
+materializecss, redux forms, Google OAuth, mongoDb, and express to handle everything was food ordering to handling payments and email order confirmations.
+Additionaly there is a Management User Interface so that you can update food prices and quantities. I will provide a 
+link to the github repository once it has been created.
+
 ## Available Scripts
 
 In the project directory, you can run:
