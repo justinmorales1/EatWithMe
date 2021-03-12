@@ -7,6 +7,8 @@ class LandingPage extends React.Component {
             <div className="container">
                 <div className="row">
 
+
+                    
                     <div className="col s4">
                         <h3> What is Lorem Ipsum? </h3>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
