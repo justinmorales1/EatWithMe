@@ -5,7 +5,7 @@ import { submitForm } from '../../actions/submitFormsAction';
 import { retrieveForms } from '../../actions/httpRequests';
 
 
-class ReviewForms extends React.Component {
+class DairyAndEggs extends React.Component {
     componentDidMount() {
         this.props.retrieveForms();
     }
@@ -92,11 +92,11 @@ const mapStateToProps = (state) => {
     }
 };
 
-ReviewForms = connect(mapStateToProps,{submitForm, retrieveForms})(ReviewForms);
+DairyAndEggs = connect(mapStateToProps,{submitForm, retrieveForms})(DairyAndEggs);
 
 
 export default reduxForm({
     form: 'reviewForms',
     destroyOnUnmount : true
-})(ReviewForms)
+})(DairyAndEggs)
 

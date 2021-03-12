@@ -2,10 +2,10 @@ import React from "react";
 import { Switch, BrowserRouter, Route, Link } from "react-router-dom";
 import Header from "./components/Header";
 import LandingPage from "./components/LandingPage";
-import MemberForms from "./components/Tabs/MemberForms";
-import EmployeeForms from "./components/Tabs/EmployeeForms";
-import ThirdPartyForms from "./components/Tabs/ThirdPartyForms";
-import ReviewForms from "./components/Tabs/ReviewForms";
+import MemberForms from "./components/Grocery/FruitAndVegetables";
+import EmployeeForms from "./components/Grocery/MeatAndSeafood";
+import ThirdPartyForms from "./components/Grocery/ThirdPartyForms";
+import ReviewForms from "./components/Grocery/DairyAndEggs";
 
 class App extends React.Component {
   render() {

@@ -1,9 +1,9 @@
 import { Field, reduxForm } from 'redux-form'
 import React from 'react';
 
-class MemberForms extends React.Component {
+class FruitAndVegetables extends React.Component {
     //This class component is showing an example of not Keeping it dry and having to re code buttons
-    //that are already available in the FormFields component.
+    //that are already available in the Accounts component.
     handle = () => {
         console.log("handleSubmit")
     };
@@ -59,7 +59,7 @@ class MemberForms extends React.Component {
 
 export default reduxForm({
     form: 'memberForms'
-})(MemberForms)
+})(FruitAndVegetables)
 
 
 

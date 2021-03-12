@@ -1,12 +1,12 @@
 import { reduxForm } from 'redux-form';
 import React from 'react';
-import FormFields from "./FormFields";
+import Accounts from "./Accounts";
 
-class EmployeeForms  extends React.Component{
+class MeatAndSeafood extends React.Component{
     render() {
         return (
             <div>
-                <FormFields pageName='Employee Forms' name='Employee Name'/>
+                <Accounts pageName='Employee Forms' name='Employee Name'/>
             </div>
         )
     }
@@ -15,4 +15,4 @@ class EmployeeForms  extends React.Component{
 
 export default reduxForm({
     form: 'employeeForm' // a unique identifier for this form
-})(EmployeeForms)
+})(MeatAndSeafood)

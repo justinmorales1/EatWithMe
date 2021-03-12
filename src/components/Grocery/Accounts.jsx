@@ -2,7 +2,7 @@ import React from 'react';
 import {Field} from "redux-form";
 
 
-const FormFields = (props) => {
+const Accounts = (props) => {
     const {handleSubmit} = props;
 
     return (
@@ -56,4 +56,4 @@ const FormFields = (props) => {
     )
 };
 
-export default FormFields
+export default Accounts
