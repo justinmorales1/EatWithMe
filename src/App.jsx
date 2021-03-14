@@ -4,13 +4,14 @@ import Header from "./components/Header";
 import LandingPage from "./components/LandingPage";
 import MemberForms from "./components/Grocery/FruitAndVegetables";
 import EmployeeForms from "./components/Grocery/MeatAndSeafood";
-import ThirdPartyForms from "./components/Grocery/ThirdPartyForms";
+import ThirdPartyForms from "./components/Grocery/AccountForms";
 import ReviewForms from "./components/Grocery/DairyAndEggs";
 import Pantry from "./components/Grocery/Pantry";
 import Beverages from "./components/Grocery/Beverages";
 import DairyAndEggs from "./components/Grocery/DairyAndEggs";
 import Bakery from "./components/Grocery/Bakery";
 import Deli from "./components/Grocery/Deli";
+import Accounts from "./components/Grocery/AccountForms";
 
 class App extends React.Component {
   render() {
@@ -27,7 +28,7 @@ class App extends React.Component {
             <Route exact path="/deli" component={Deli} />
             <Route exact path="/pantry" component={Pantry} />
             <Route exact path="/beverages" component={Beverages} />
-            <Route exact path="/account" component={ThirdPartyForms} />
+            <Route exact path="/account" component={Accounts} />
           </Switch>
         </BrowserRouter>
       </div>

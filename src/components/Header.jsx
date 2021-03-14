@@ -35,7 +35,7 @@ class Header extends React.Component {
                 <Link to="/beverages">Beverages </Link>
               </li>
               <li>
-                <Link to="/account">Account </Link>
+                <Link to="/account"> Account </Link>
               </li>
               {/*<li>*/}
               {/*  <GoogleAuth />*/}
