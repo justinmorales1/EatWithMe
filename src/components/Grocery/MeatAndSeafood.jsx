@@ -1,18 +1,17 @@
-import { reduxForm } from 'redux-form';
-import React from 'react';
-import Accounts from "./Accounts";
+import { reduxForm } from "redux-form";
+import React from "react";
 
-class MeatAndSeafood extends React.Component{
-    render() {
-        return (
-            <div>
-                <Accounts pageName='Employee Forms' name='Employee Name'/>
-            </div>
-        )
-    }
-
+class MeatAndSeafood extends React.Component {
+  render() {
+    return (
+      <div className="container">
+        <div> Meat </div>
+        <div> Seafood </div>
+      </div>
+    );
+  }
 }
 
 export default reduxForm({
-    form: 'employeeForm' // a unique identifier for this form
-})(MeatAndSeafood)
+  form: "meatAndSeafood", // a unique identifier for this form
+})(MeatAndSeafood);

@@ -6,6 +6,11 @@ import MemberForms from "./components/Grocery/FruitAndVegetables";
 import EmployeeForms from "./components/Grocery/MeatAndSeafood";
 import ThirdPartyForms from "./components/Grocery/ThirdPartyForms";
 import ReviewForms from "./components/Grocery/DairyAndEggs";
+import Pantry from "./components/Grocery/Pantry";
+import Beverages from "./components/Grocery/Beverages";
+import DairyAndEggs from "./components/Grocery/DairyAndEggs";
+import Bakery from "./components/Grocery/Bakery";
+import Deli from "./components/Grocery/Deli";
 
 class App extends React.Component {
   render() {
@@ -17,12 +22,12 @@ class App extends React.Component {
             <Route exact path="/" component={LandingPage} />
             <Route exact path="/meat-and-seafood" component={EmployeeForms} />
             <Route exact path="/fruit-and-vegetables" component={MemberForms} />
-            <Route exact path="/dairy-and-eggs" component={ThirdPartyForms} />
-            <Route exact path="/bakery" component={ReviewForms} />
-            <Route exact path="/deli" component={ReviewForms} />
-            <Route exact path="/pantry" component={ReviewForms} />
-            <Route exact path="/beverages" component={ReviewForms} />
-            <Route exact path="/account" component={ReviewForms} />
+            <Route exact path="/dairy-and-eggs" component={DairyAndEggs} />
+            <Route exact path="/bakery" component={Bakery} />
+            <Route exact path="/deli" component={Deli} />
+            <Route exact path="/pantry" component={Pantry} />
+            <Route exact path="/beverages" component={Beverages} />
+            <Route exact path="/account" component={ThirdPartyForms} />
           </Switch>
         </BrowserRouter>
       </div>
