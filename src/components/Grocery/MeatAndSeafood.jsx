@@ -1,16 +1,20 @@
 import { reduxForm } from "redux-form";
 import React from "react";
 import FoodCard from "./FoodCard";
-import Lobster from "../../assets/Lobster.png";
+import foodDetails from "../../assets/foodImages";
 
 class MeatAndSeafood extends React.Component {
-  render() {
+  renderCard = foodDetails.map((currentObject) => {
     return (
-      <div className="container">
-        <h1> Meat and Seafood </h1>
-        <FoodCard image={Lobster} />
-      </div>
+      <FoodCard
+        image={currentObject.image}
+        title={currentObject.title}
+        price={currentObject.price}
+      />
     );
+  });
+  render() {
+    return <div className="container">{this.renderCard}</div>;
   }
 }
 
