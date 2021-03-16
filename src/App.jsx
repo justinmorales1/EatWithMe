@@ -4,14 +4,14 @@ import Header from "./components/Header";
 import LandingPage from "./components/LandingPage";
 import MemberForms from "./components/Grocery/FruitAndVegetables";
 import EmployeeForms from "./components/Grocery/MeatAndSeafood";
-import ThirdPartyForms from "./components/Grocery/AccountForms";
+import ThirdPartyForms from "./components/UserComponents/AccountForms";
 import ReviewForms from "./components/Grocery/DairyAndEggs";
 import Pantry from "./components/Grocery/Pantry";
 import Beverages from "./components/Grocery/Beverages";
 import DairyAndEggs from "./components/Grocery/DairyAndEggs";
 import Bakery from "./components/Grocery/Bakery";
 import Deli from "./components/Grocery/Deli";
-import Accounts from "./components/Grocery/AccountForms";
+import Accounts from "./components/UserComponents/AccountForms";
 
 class App extends React.Component {
   render() {
