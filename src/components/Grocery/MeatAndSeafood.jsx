@@ -1,7 +1,7 @@
 import { reduxForm } from "redux-form";
 import React from "react";
 import FoodCard from "./FoodCard";
-import foodDetails from "../../assets/foodImages";
+import foodDetails from "../../assets/foodDetails";
 
 class MeatAndSeafood extends React.Component {
   renderCard = foodDetails.map((currentObject) => {
