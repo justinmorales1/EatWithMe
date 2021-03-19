@@ -1,23 +1,24 @@
 import { Field, reduxForm } from "redux-form";
 import React from "react";
+import foodDetails from "../../assets/foodDetails";
+import FoodCard from "./FoodCard";
 
 class FruitAndVegetables extends React.Component {
-  //This class component is showing an example of not Keeping it dry and having to re code buttons
-  //that are already available in the Accounts component.
-  handle = () => {
-    console.log("handleSubmit");
-  };
-
-  render() {
-    const { handleSubmit } = this.props;
+  renderCard = foodDetails.map((currentObject) => {
     return (
-      <div>
-        <form onSubmit={handleSubmit(this.handle)}>
-          <div className="container">
-            <div> Fruits </div>
-            <div> Vegetables </div>
-          </div>
-        </form>
+      <div className="col s3">
+        <FoodCard
+          image={currentObject.image}
+          title={currentObject.title}
+          price={currentObject.price}
+        />
+      </div>
+    );
+  });
+  render() {
+    return (
+      <div className="container">
+        <div className="row">{this.renderCard}</div>
       </div>
     );
   }
