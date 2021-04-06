@@ -10,6 +10,8 @@ import DairyAndEggs from "./components/Grocery/DairyAndEggs";
 import Bakery from "./components/Grocery/Bakery";
 import Deli from "./components/Grocery/Deli";
 import Accounts from "./components/UserComponents/AccountForms";
+import CreateAccount from "./components/UserComponents/CreateAccount";
+
 
 class App extends React.Component {
   render() {
@@ -26,7 +28,7 @@ class App extends React.Component {
             <Route exact path="/deli" component={Deli} />
             <Route exact path="/pantry" component={Pantry} />
             <Route exact path="/beverages" component={Beverages} />
-            <Route exact path="/account" component={Accounts} />
+            <Route exact path="/account" component={CreateAccount} />
           </Switch>
         </BrowserRouter>
       </div>
